@@ -10,8 +10,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import java.lang.Exception
 
-class TreeRepository
-constructor(
+class TreeRepository constructor(
     private val treeDao: TreeDao,
     private val treeRetrofit: TreeRetrofit,
     private val cacheMapper: CacheMapper,
