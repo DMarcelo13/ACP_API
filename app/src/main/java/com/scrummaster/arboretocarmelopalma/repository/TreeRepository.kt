@@ -17,7 +17,7 @@ constructor(
     private val cacheMapper: CacheMapper,
     private val networkMapper: NetworkMapper
 ) {
-    suspend fun getTrees(): Flow<DataState> = flow {
+    suspend fun getTree(): Flow<DataState> = flow {
         emit(DataState.Loading)
         delay(3000)
         try {
