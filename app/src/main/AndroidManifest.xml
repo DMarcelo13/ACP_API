@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.scrummaster.arboretocarmelopalma">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name="com.scrummaster.arboretocarmelopalma.ui.MyApplication"
         android:allowBackup="true"
