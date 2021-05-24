@@ -1,7 +1,7 @@
 package com.scrummaster.arboretocarmelopalma.model
 
 data class Tree(
-    var id: Int,
+    var id: String,
     var name: String,
     var scientific_name: String,
     var family: String,

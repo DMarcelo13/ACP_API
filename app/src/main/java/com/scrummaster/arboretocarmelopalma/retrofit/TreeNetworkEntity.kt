@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName
 class TreeNetworkEntity (
     @SerializedName("id")
     @Expose
-    var id: Int,
+    var id: String,
 
     @SerializedName("name")
     @Expose

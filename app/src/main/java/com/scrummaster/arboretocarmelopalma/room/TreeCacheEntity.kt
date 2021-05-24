@@ -9,7 +9,7 @@ class TreeCacheEntity (
 
     @PrimaryKey(autoGenerate = false)
     @ColumnInfo(name = "id")
-    var id: Int,
+    var id: String,
 
     @ColumnInfo(name = "name")
     var name: String,
