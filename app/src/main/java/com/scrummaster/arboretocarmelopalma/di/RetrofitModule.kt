@@ -9,7 +9,6 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import javax.inject.Singleton
 
 @Module
@@ -28,7 +27,7 @@ object RetrofitModule {
     @Provides
     fun provideRetrofit(gson: Gson) : Retrofit.Builder{
         return Retrofit.Builder()
-            .baseUrl("http://api-arboreto.herokuapp.com/")
+            .baseUrl("https://api-arboreto.herokuapp.com/")
             .addConverterFactory(GsonConverterFactory.create(gson))
     }
 
